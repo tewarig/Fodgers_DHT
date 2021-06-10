@@ -71,10 +71,10 @@ def register():
               
 
                 test_response = requests.post(URL+'registerNetwork', json={'email_field': email, 'host_url_field': request.url_root})   
-                if test_response.ok:
-                    flash("host has been registered")
-                else:
-                    return "error"
+                # if test_response.ok:
+                #     flash("host has been registered")
+                # else:
+                #     return "error"
 
                 db.session.add(new_user)
                 db.session.commit()

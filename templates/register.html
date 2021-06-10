@@ -21,19 +21,21 @@
 
 </div>
 <div class="main-body-text">
-<div class="login-card" style="height: 450px;">
+<div class="login-card" style="height: 500px;">
   <h1>
       Sign up
   </h1>
   <hr/>
   <form class="container box" action="" method="POST" class="form-box">
-  <input placeholder="Email" class="card-input btn-login-padding" type="email">                  
+    <input type="text" name="name_field" class="card-input btn-login-padding" placeholder="Name" required> </input>
+
+<input placeholder="Username" class="card-input btn-login-padding " type="text"   name="user_field" required>                  
 </input>
-<input placeholder="Username" class="card-input btn-login-padding " type="text">                  
+<input placeholder="Email" class="card-input btn-login-padding" type="email"  name="email_field" required >                  
 </input>
-<input placeholder="Password" class="card-input btn-login-padding" type="password">                  
+<input placeholder="Password" class="card-input btn-login-padding" type="password"  name="password_field" required>                  
 </input>
-<input placeholder="Password" class="card-input btn-login-padding" type="password">                  
+<input placeholder="Password" class="card-input btn-login-padding" name="password_confirm" type="password" required>                  
 </input>
 <br/>
  <br/> <a href="/login">already have an account? login </a>
